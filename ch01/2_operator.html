@@ -47,6 +47,55 @@
     // result = num1++; > 결과값은 10, 증감연산자가 뒤에 있을 경우 증감은 나중에
     // alert(result + " : " + num1);
 
+    // # 비교연산자
+    var a = 10;
+    var b = 20;
+    var c = 10;
+    var f = "20";
+    var result;
+
+    result = a > b;
+    result = a >= b;
+    result = a < b;
+    result = a <= b;
+    result = a == b;
+    result = a != b;
+    // alert(result);
+
+    var result2;
+    // result2 = b == f;
+    result2 = b === f; //data type까지 비교한다
+    result2 = b !== f;
+    // alert(result2);
+
+    // 논리연산자
+    var a = 10;
+    var b = 20;
+    var m = 30;
+    var n = 40;
+
+    // result = a>b && b>=m; // and
+    // result = a>b || b>=m; // or
+    result = !(a>b); // 느낌표 표기 시 반대 결과값이 표기됨
+    // alert(result);
+
+    // 상황조건 연산자
+    var a = 10;
+    var b = 3;
+
+    var result = a > b ? "javascript" : "hello";
+    alert(result);
+
+    var result = a < b ? "javascript" : "hello";
+    var result = a > b ? "javascript" : "hello";
+    var result = a < b ? "javascript" : "hello";
+    var result = a < b ? "javascript" : "hello";
+    var result = a < b ? "javascript" : "hello";
+    var result = a > b ? "javascript" : "hello";
+    var result = a > b ? "javascript" : "hello";
+    var result = a < b ? "javascript" : "hello";
+    var result = a > b ? "javascript" : "hello";
+    var result = a < b ? "javascript" : "hello";
 
 </script>
 </body>
