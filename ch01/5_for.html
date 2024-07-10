@@ -9,21 +9,70 @@
 
 <script>
 
-    for(let i=1; i<=3; i++){
-        alert("abcdefgh")
+    /* for(let i=1; i<=3; i++){
+        alert("abcdefgh");
+    } */
+
+
+    // 1~10 합
+    var sum = 0;
+    for(let i=1; i<=10; i++){
+        sum += i;
+        // alert(sum + " : " + i)
+    } 
+    // alert(sum)
+    // 합쳐야 한다
+    // 결과 변수에 누적시킨다
+    // 결과를 출력한다
+
+
+    // 2단
+    // var sum = 0;
+    // for(let i=2; i<=2; i++){
+    //     for(let j=2; j<=9; j++){
+    //         sum = i * j;
+    //         alert(i + " * " + j + " = " + sum);
+
+    //     }
+    // }
+
+    // for(let i=1; i<=9; i++){
+    //     sum = 2*i;
+    //     alert("2 " + " * " + i + " = " + 2*i);
+    // }
+
+    // 2~9단
+    // 2단
+    var sum = 0;
+    for(let i=2; i<=9; i++){
+        for(let j=1; j<=9; j++){
+            sum = i*j;
+            console.log(i + " * " + j + " = " + sum);
+        }
+        console.log("-----------------")
     }
 
-    for(let i=1; i<=3; i++){
-        alert("abcdefgh")
+
+    // 2단 짝수만
+    for(let i=2; i<=9; i++){
+        if((i % 2)==0) {
+            console.log("2" + " * " + i + " = " + i*2);
+        }
+    } console.log("-----------------")
+
+    // 2단 홀수만
+    for(let i=2; i<=9; i++){
+        if((i % 2)==1) {
+            console.log("2" + " * " + i + " = " + i*2);
+        }
     }
 
-    for(let i=1; i<=3; i++){
-        alert("abcdefgh")
-    }
 
-    for(let i=1; i<=3; i++){
-        alert("abcdefgh")
-    }
+    // 별 출력
+    for(let i=1; i<=5; i++) {
+        console.log("*");
+    } 
+
 
 
 </script>
