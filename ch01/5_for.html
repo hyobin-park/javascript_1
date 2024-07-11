@@ -1,79 +1,117 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
 
-<script>
+    <script>
 
-    /* for(let i=1; i<=3; i++){
-        alert("abcdefgh");
-    } */
-
-
-    // 1~10 합
-    var sum = 0;
-    for(let i=1; i<=10; i++){
-        sum += i;
-        // alert(sum + " : " + i)
-    } 
-    // alert(sum)
-    // 합쳐야 한다
-    // 결과 변수에 누적시킨다
-    // 결과를 출력한다
+        /* for(let i=1; i<=3; i++){
+            alert("abcdefgh");
+        } */
 
 
-    // 2단
-    // var sum = 0;
-    // for(let i=2; i<=2; i++){
-    //     for(let j=2; j<=9; j++){
-    //         sum = i * j;
-    //         alert(i + " * " + j + " = " + sum);
-
-    //     }
-    // }
-
-    // for(let i=1; i<=9; i++){
-    //     sum = 2*i;
-    //     alert("2 " + " * " + i + " = " + 2*i);
-    // }
-
-    // 2~9단
-    var sum = 0;
-    for(let i=2; i<=9; i++){
-        for(let j=1; j<=9; j++){
-            sum = i*j;
-            console.log(i + " * " + j + " = " + sum);
+        // 1~10 합
+        var sum = 0;
+        for (let i = 1; i <= 10; i++) {
+            sum += i;
+            // alert(sum + " : " + i)
         }
-        console.log("-----------------")
-    }
+        // alert(sum)
+        // 합쳐야 한다
+        // 결과 변수에 누적시킨다
+        // 결과를 출력한다
 
 
-    // 2단 짝수만
-    for(let i=2; i<=9; i++){
-        if((i % 2)==0) {
-            console.log("2" + " * " + i + " = " + i*2);
+        // 2단
+        // var sum = 0;
+        // for(let i=2; i<=2; i++){
+        //     for(let j=2; j<=9; j++){
+        //         sum = i * j;
+        //         alert(i + " * " + j + " = " + sum);
+
+        //     }
+        // }
+
+        // for(let i=1; i<=9; i++){
+        //     sum = 2*i;
+        //     alert("2 " + " * " + i + " = " + 2*i);
+        // }
+
+        // 2~9단
+        var sum = 0;
+        for (let i = 2; i <= 9; i++) {
+            for (let j = 1; j <= 9; j++) {
+                sum = i * j;
+                console.log(i + " * " + j + " = " + sum);
+            }
+            console.log("-----------------")
         }
-    } console.log("-----------------")
 
-    // 2단 홀수만
-    for(let i=2; i<=9; i++){
-        if((i % 2)==1) {
-            console.log("2" + " * " + i + " = " + i*2);
+
+        // 2단 짝수만
+        for (let i = 2; i <= 9; i++) {
+            if ((i % 2) == 0) {
+                console.log("2" + " * " + i + " = " + i * 2);
+            }
+        } console.log("-----------------")
+
+        // 2단 홀수만
+        for (let i = 2; i <= 9; i++) {
+            if ((i % 2) == 1) {
+                console.log("2" + " * " + i + " = " + i * 2);
+            }
+        } console.log("-----------------")
+
+
+        // 별 출력 1
+        var star = "";
+        for (let i = 1; i <= 5; i++) {
+            for (let j = i; j <= i; j++) {
+                star += "*"
+                console.log(star);
+            }
+        } console.log("-----------------")
+
+
+        // 별 출력 2
+        let star2 = "";
+        var empty = "";
+        for (let i = 1; i <= 5; i++) {
+            for (let j = 1; j <= (2 * i) - 1; j++) {
+                star2 += "*";
+            }
+            for (let k = (5 - i); k >= 1; k--) {
+                empty += " ";
+            }
+            console.log(empty + star2 + empty);
+            star2 = "";
+            empty = "";
         }
-    }
+
+        let star3 = "";
+        var empty2 = "";
+        for (let i = 1; i <= 5; i++) {
+            for (let j = 1; j <= i; j++) {
+                star3 += "*";
+            }
+            for (let k = (5 - i); k >= 1; k--) {
+                empty2 += " ";
+                // console.log(i + " : " + j + " : " + k);
+            }
+            console.log(empty2 + star3);
+            // console.log(star2);
+            star3 = "";
+            empty2 = "";
+        }
 
 
-    // 별 출력
-    for(let i=1; i<=5; i++) {
-        console.log("*");
-    } 
-
-
-
-</script>
+    </script>
 </body>
+
 </html>
