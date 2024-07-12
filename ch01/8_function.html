@@ -49,36 +49,36 @@
     // }
 
 
-    plus1(4,3)
-    minus1(5,4)
-    multiply1(9,4)
-    divide1(10,2)
+    plus1(4,3);
+    minus1(5,4);
+    multiply1(9,4);
+    divide1(10,2);
 
     function plus1(num1, num2) {
         let result = num1 + num2;
-        alert(result);
+        // alert(result);
     }
 
     function minus1(num1, num2) {
         let result = num1 - num2;
-        alert(result);
+        // alert(result);
     }
 
     function multiply1(num1, num2) {
         let result = num1 * num2;
-        alert(result);
+        // alert(result);
     }
 
     function divide1(num1, num2) {
         let result = num1 / num2;
-        alert(result);
+        // alert(result);
     }
     var divide1Result = divide1(30, 10);
-        alert(divide1Result);
+        // alert(divide1Result);
         
 
     // return 사용하기
-        // return을 사용할 때는 항상 대입을 해야한다.
+    // return을 사용할 때는 항상 대입을 해야한다. return된 함수는 변수 선언을 해야한다.
 
     function plus1(num1, num2) {
         num1 = change(num1);
@@ -86,13 +86,64 @@
         return result;
     }
 
-    var realResult = add2(30, 10);
-        alert(realResult);
-
+    var realResult = plus1(30, 10);
+        // alert(realResult);
 
 
     function change(num) {
         return num -10;
+    }
+
+
+    // 정수형 변수 두개 선언
+    // 두 수를 비교하여 큰 수를 return
+    // 출력 "변수 1과 변수2 중 큰 수는 ? 입니다."
+    // 출력도 함수화 할 것
+
+    var num1 = 10;
+    var num2 = 15;
+    var a = num4(num1, num2); // return 값에 대한 변수 선언
+    num5(a);                  // return 값 num5 에서 받기
+
+    function num4(num1, num2) {
+        let result;
+        if(num1 < num2) {
+            result = num2;
+        } else {
+            result = num1;
+        }
+        return result; // 15
+    }
+    function num5(a) { 
+        console.log(num1 + " 과 " + num2 + " 중 큰 수는 " + a + " 입니다.");
+    }
+
+
+    // 정수형 변수 1개 선언
+    // 짝수인지 홀수인지 판단하는 함수
+    // "? 수는 짝수/홀수 입니다." 출력하는 함수
+
+    var int3 = 11;
+    var string = oddEven(int3);
+    display(int3, string);
+
+    function oddEven(num) {
+        let result;
+        if(num%2==0) {
+            result = "짝수";
+        } else {
+            result = "홀수";
+        }
+        return result;
+    }
+    function display(num, str) {
+        if(num ==0) {
+            alert("0은 그냥 0이다.");
+        } else if(num < 0) {
+            alert("음수는 넣지 마라...")
+        } else {
+            alert(num + " 은/는 " + str + " 입니다.")
+        }
     }
 
 
